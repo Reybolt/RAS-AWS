@@ -52,10 +52,14 @@ if __name__ == '__main__':
         'tax_percentage': 13.0,
         'tax_total': 6.565,
         'total_after_tax': 57.065,
-        'description': 'We changed the oil',
+        'description': (
+            'We changed the oil and everything inbetween. '
+            'This car has done an absolute 180 degrees'
+        ),
         'parts_replaced': ['oil', 'windshield fluid'],
         'customer_id': 14,
         'payment_status': 'unpaid',
+        'payment_method': 'Cash'
     }
     pdf_file = "ras_invoice_1.pdf"
     generate_invoice(html_file, template_vars, pdf_file)

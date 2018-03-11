@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>RAS Invoice</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+    }
+  </style>
+</head>
+<body>
+  <h1>RAS - Invoice </h1>
+  <p>Bill ID: {{ bill_id }}</p>
+  <p>Date of invoice: {{ date_created }}</p>
+  <p>Bill due date: {{ due_date }}</p>
+  <p>Labour cost: {{ labour_cost }}</p>
+  <p>Parts cost: {{ parts_cost }}</p>
+  <p>Total before tax: {{ total_before_tax }}</p>
+  <p>Tax percentage: {{ tax_percentage }}</p>
+  <p>Tax total: {{ tax_total }}</p>
+  <p>Total after tax: {{ total_after_tax }}</p>
+  <p>Description: {{ description }}</p>
+  Parts replaced:
+  {% for part in parts_replaced %}
+    <p>{{ part }}</p>
+  {% endfor %}
+  <p>Customer ID: {{ customer_id }}</p>
+  <p>Payment status: {{ payment_status }}</p>
+</body>
+</html>

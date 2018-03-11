@@ -19,7 +19,7 @@ def generate_invoice(html_file, template_vars):
 if __name__ == '__main__':
     html_file = "invoice_template.html"
     template_vars = {
-        'paragraph':
+        'paragraphs':
             ['first paragraph', 'second paragraph', 'third paragraph']
     }
     generate_invoice(html_file, template_vars)
